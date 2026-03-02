@@ -12,10 +12,3 @@ export interface Product {
 export interface CartItem extends Product {
   quantity: number;
 }
-
-export interface RecommendationResponse {
-  recommendation: string;
-  suggestedProduct: string;
-  reasoning: string;
-  vibe: string;
-}
