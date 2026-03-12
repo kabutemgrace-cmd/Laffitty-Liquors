@@ -160,7 +160,7 @@ export default function CartDrawer({ isOpen, onClose, items, onRemove, onUpdateQ
               </div>
               <button
                 disabled={items.length === 0}
-                onClick={onGoToInventory}
+                onClick={() => setStep('checkout')}
                 className="w-full bg-black text-white font-semibold py-4 text-sm tracking-wide hover:bg-primary-gold hover:text-black transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none shadow-xl rounded-2xl flex items-center justify-center gap-2"
               >
                 Place Order <ChevronRight size={16} />
